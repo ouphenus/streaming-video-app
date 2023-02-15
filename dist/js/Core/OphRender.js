@@ -6,6 +6,7 @@ export class OphRender {
         document.addEventListener('keydown', (evt) => { this.onKeyDown(evt); });
         this.pixiApp = new PIXI.Application({ width: this.appWidth, height: this.appHeight, antialias: true });
         this.canvas = this.pixiApp.view;
+        this.canvas.style.position = "absolute";
         document.body.appendChild(this.pixiApp.view);
         // @ts-ignore
         this.pixiApp.ticker.add(() => this.update(this.pixiApp.ticker.deltaMS));
