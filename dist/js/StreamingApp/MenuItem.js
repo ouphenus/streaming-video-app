@@ -13,7 +13,6 @@ export class MenuItem extends OphWidget {
         this.text.y = 0;
         this.container.addChild(this.icon);
         this.container.addChild(this.text);
-        console.log("this.icon", this.icon);
     }
     onHover(isHover) {
         if (isHover) {

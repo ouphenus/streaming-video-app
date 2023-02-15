@@ -91,7 +91,7 @@ export class ContentMoviePreview extends OphWidget
 
     onLoadImage():void
     {
-        console.info("on loadeddddd");
+        // TODO
     }
 }
 

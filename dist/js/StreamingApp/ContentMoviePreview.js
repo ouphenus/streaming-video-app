@@ -59,7 +59,7 @@ export class ContentMoviePreview extends OphWidget {
         }
     }
     onLoadImage() {
-        console.info("on loadeddddd");
+        // TODO
     }
 }
 export class MoviePreviewTopInfo extends OphWidget {

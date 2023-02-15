@@ -27,7 +27,6 @@ export class StreamingApp {
         });
     }
     onLoadData(data) {
-        console.log("onLoadData :: data", data);
         StreamingApp.data = data;
         this.menuLeftBar.onLoadData(data);
         this.contentMovies.onLoadData(data);

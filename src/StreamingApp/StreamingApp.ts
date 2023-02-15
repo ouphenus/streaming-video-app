@@ -43,7 +43,6 @@ export class StreamingApp implements OphApp
 
     onLoadData(data:Data):void
     {
-        console.log("onLoadData :: data", data);
         StreamingApp.data = data;
         this.menuLeftBar.onLoadData(data);
         this.contentMovies.onLoadData(data);
