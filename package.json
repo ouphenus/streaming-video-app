@@ -1,0 +1,13 @@
+{
+  "name": "oph-streaming-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./bin/index.js",
+  "scripts": {
+    "dev": "npx tsc --watch"
+  },
+  "author": "Roberto López (Ouphenus) ouphenus@gmail.com",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {}
+}

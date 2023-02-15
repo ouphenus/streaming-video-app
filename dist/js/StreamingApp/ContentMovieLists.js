@@ -1,0 +1,66 @@
+import { OphInterpolate } from "../Core/OphInterpolate.js";
+import { Keys, OphUtils } from "../Core/OphUtils.js";
+import { OphWidget } from "../Core/OphWidget.js";
+import { MovieItemList } from "./MovieItemList.js";
+export class ContentMovieLists extends OphWidget {
+    constructor(x, y) {
+        super(x, y);
+        this.SEPARATION = 400;
+        this.MAKER_X = -4;
+        this.MAKER_Y = 43;
+        this.index = 0;
+        this.movieLists = [];
+        this.movement = new OphInterpolate();
+        this.containerLists = new PIXI.Container();
+        this.container.addChild(this.containerLists);
+        this.marker = PIXI.Sprite.from(`./assets/images/controls/selector.png`);
+        this.marker.x = this.MAKER_X;
+        this.marker.y = this.MAKER_Y;
+        this.container.addChild(this.marker);
+    }
+    onKeyDown(evt) {
+        if (evt.code == Keys.ArrowRight) {
+            this.movieLists[this.index].goTo(1, undefined, this.onChangeMovie);
+        }
+        else if (evt.code == Keys.ArrowLeft) {
+            this.movieLists[this.index].goTo(-1, this.onExitLeft, this.onChangeMovie);
+        }
+        else if (evt.code == Keys.ArrowUp) {
+            this.goto(-1);
+        }
+        else if (evt.code == Keys.ArrowDown) {
+            this.goto(1);
+        }
+    }
+    onLoadData(data) {
+        for (let i = 0; i < data.movieList.length; i++) {
+            this.addList(0, this.SEPARATION * i, data.movieList[i]);
+        }
+    }
+    goto(amount) {
+        if (!this.movement.isBusy) {
+            let oldIndex = this.index;
+            this.index += amount;
+            this.index = OphUtils.clamp(this.index, 0, this.movieLists.length - 1);
+            this.movement.start(this.movement.value, this.index * this.SEPARATION, 400);
+            if (oldIndex != this.index && this.onChangeMovie) {
+                this.onChangeMovie(this.movieLists[this.index].getCurrenMovieItem().data);
+            }
+            this.marker.x = this.MAKER_X + (this.movieLists[this.index].showCounter ?
+                MovieItemList.MARGIN_COUNTER : 0);
+        }
+    }
+    update(dt) {
+        for (let i = 0; i < this.movieLists.length; i++) {
+            this.movieLists[i].update(dt);
+        }
+        this.movement.update(dt);
+        this.containerLists.y = -this.movement.value;
+    }
+    addList(x, y, dataList) {
+        let list = new MovieItemList(x, y, dataList);
+        this.containerLists.addChild(list.container);
+        this.movieLists.push(list);
+    }
+}
+//# sourceMappingURL=ContentMovieLists.js.map

@@ -1,0 +1,244 @@
+{
+    "menuLeft" : [
+        {
+            "icon" : "./assets/images/icons/icon-search.png",
+            "des" : "Search"
+        },
+        {
+            "icon" : "./assets/images/icons/icon-home.png",
+            "des" : "Home"
+        },
+        {
+            "icon" : "./assets/images/icons/icon-stats.png",
+            "des" : "New & Popular"
+        },
+        {
+            "icon" : "./assets/images/icons/icon-tv.png",
+            "des" : "TV Shows"
+        },
+        {
+            "icon" : "./assets/images/icons/icon-film.png",
+            "des" : "Movies"
+        },
+        {
+            "icon" : "./assets/images/icons/icon-category.png",
+            "des" : "Categories"
+        },
+        {
+            "icon" : "./assets/images/icons/icon-favorite.png",
+            "des" : "My List"
+        }
+    ],
+
+    "movieList" : [
+        {
+            "title" : "Best Top Movies in Peru",
+            "showCounter": "0",
+            "movies" : ["001", "002", "003", "004", "005", "006", "007", "008", "009", "010"]
+        },
+        {
+            "title" : "Top 10 in Perú",
+            "showCounter": "1",
+            "movies" : ["010", "020", "009", "019", "008", "018", "007", "017", "006", "016"]
+        },
+        {
+            "title" : "Acclaimed Animes",
+            "showCounter": "0",
+            "movies" : ["011", "012", "013", "014", "015", "016", "017", "018", "019", "020"]
+        },
+        {
+            "title" : "Continue Watching",
+            "showCounter": "0",
+            "movies" : ["007", "018", "003", "008"]
+        }
+        ,
+        {
+            "title" : "Best Five Animes",
+            "showCounter": "1",
+            "movies" : ["013", "015", "017", "020", "011"]
+        }
+    ],
+
+    "movies" : [
+        {
+            "id" : "001",
+            "name" : "Avatar",
+            "des" : "Jake Sully lives with his newfound family formed on the extrasolar moon Pandora. Once a familiar threat returns to finish what was previously started, Jake must work with Neytiri and the army of the Na'vi race to protect their home.",
+            "year" : "2022",
+            "age" : "13",
+            "duration" : "3h 10m",
+            "resolution" : "4K"
+        },
+        {
+            "id" : "002",
+            "name" : "Matrix",
+            "des" : "Thomas A. Anderson is a man living two lives. By day he is an average computer programmer and by night a hacker known as Neo. Neo has always questioned his reality, but the truth is far beyond his imagination. ",
+            "year" : "1999",
+            "age" : "14",
+            "duration" : "2h 11m",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "003",
+            "name" : "Mr nobody",
+            "des" : "Nemo, a nine year old boy, has been thrust into a position where he must make an impossible decision - to choose between his mother and father. In the seconds preceding the rest of his life he wonders where each choice will ",
+            "year" : "2009",
+            "age" : "14",
+            "duration" : "2h 21 m",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "004",
+            "name" : "Flash",
+            "des" : "After being struck by lightning, Barry Allen (Grant Gustin) is reborn. Now having super speed, he has a new name. The Flash. With the help of his friends, he fights crime and find other metahumans like him",
+            "year" : "2014",
+            "age" : "12",
+            "duration" : "7 Seasons",
+            "resolution" : "2K"
+        },
+        {
+            "id" : "005",
+            "name" : "Birds of Prey",
+            "des" : "The film starts with Harley Quinn (Margot Robbie) telling her story from the beginning through an animated intro. As a child, her deadbeat alcoholic dad tried to get rid of her multiple times until he finally dumped her at a Catholic girls school.",
+            "year" : "2020",
+            "age" : "14",
+            "duration" : "1h 49m",
+            "resolution" : "4K"
+        },
+        {
+            "id" : "006",
+            "name" : "Pride & Prejudice",
+            "des" : "Sparks fly when spirited Elizabeth Bennet meets single, rich, and proud Mr. Darcy. But Mr. Darcy reluctantly finds himself falling in love with a woman beneath his class. Can each overcome their own pride and prejudice?",
+            "year" : "2005",
+            "age" : "6",
+            "duration" : "2h 9m",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "007",
+            "name" : "Prometheus",
+            "des" : "The Prometheus enters the atmosphere of the planet, encountering turbulence which dissipates when they break through the cloud cover and can see the surface. The Prometheus lands near an alien structure",
+            "year" : "2012",
+            "age" : "12",
+            "duration" : "2h 4m",
+            "resolution" : "4K"
+        },
+        {
+            "id" : "008",
+            "name" : "Superman",
+            "des" : "Just before the destruction of the planet Krypton, scientist Jor-El sends his infant son Kal-El on a spaceship to Earth. Raised by kindly farmers Jonathan and Martha Kent, young Clark discovers the source of his superhuman powers and moves...",
+            "year" : "1978",
+            "age" : "3",
+            "duration" : "2h 23m",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "009",
+            "name" : "A.I.",
+            "des" : "Without final acceptance by humans or machines, David embarks on a journey to discover where he truly belongs, uncovering a world in which the line between robot and machine …",
+            "year" : "2001",
+            "age" : "13",
+            "duration" : "2h 26m",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "010",
+            "name" : "Interstellar",
+            "des" : "In Earth's future, a global crop blight and second Dust Bowl are slowly rendering the planet uninhabitable. Professor Brand (Michael Caine), a brilliant NASA physicist, is working on …",
+            "year" : "2014",
+            "age" : "13",
+            "duration" : "2h 49m",
+            "resolution" : "4K"
+        },
+        {
+            "id" : "011",
+            "name" : "Saint Seiya : Hades Chapter",
+            "des" : "Hades is planning to take over the world, to achieve that goal, he sends out deceased Gold Saints to take Athena's head. Seiya and the other Bronze Saints come to help but their help isn't appreciated by the remaining Gold Saints that are still alive.",
+            "year" : "2002",
+            "age" : "12",
+            "duration" : "32 Episodes",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "012",
+            "name" : "Goku",
+            "des" : "Goku and Vegeta encounter Broly, a Saiyan warrior unlike any fighter they've faced before. Director Tatsuya Nagamine Writer Akira Toriyama (screenplay by) Stars Masako Nozawa (voice) Aya Hisakawa",
+            "year" : "2018",
+            "age" : "13",
+            "duration" : "1h 40min",
+            "resolution" : "4K"
+        },
+        {
+            "id" : "013",
+            "name" : "Death Note",
+            "des" : "A brainy high school student joins a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written on it.",
+            "year" : "2006",
+            "age" : "14",
+            "duration" : "2 Seasons",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "014",
+            "name" : "Evangelion",
+            "des" : "When the Angels start attacking the planet Earth in the year 2015, only a handful of 14-year-old EVA pilots are able to stop them. Young Shinji Ikari suddenly finds himself forced to pilot EVA-01, a giant organic mecha...",
+            "year" : "1995",
+            "age" : "13",
+            "duration" : "26 Episodes",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "015",
+            "name" : "Cobra",
+            "des" : "Cobra, a famous charismatic space pirate with 'psychogun' for a hand, decides to renounce his ways, and become an ordinary person with a new identity. His memories do come back and he becomes a space adventurer fighting villains.",
+            "year" : "1982",
+            "age" : "16",
+            "duration" : "31 Seasons",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "016",
+            "name" : "Kotesushin Jeeg",
+            "des" : "Shiba, a famous scientist, has been horribly murdered. His eldest son Hiroshi, a famous car racer, soon discovers that his legacy still lives on - and is threatened by the revival of the Evil Empress Medusa, the female demon who ordered his death",
+            "year" : "1976",
+            "age" : "14",
+            "duration" : "46 Episodes",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "017",
+            "name" : "Macross",
+            "des" : "In 1999, an alien spaceship crashes on South Ataria Island and makes the human race aware of other life in space. Ten years later, the ship is reconstructed and christened as the SDF-1 Macross.",
+            "year" : "1994",
+            "age" : "14",
+            "duration" : "49 Episodes",
+            "resolution" : "4K"
+        },
+        {
+            "id" : "018",
+            "name" : "Mazinger Z",
+            "des" : "Mazinger Z is an enormous super robot, constructed with a fictional metal called Super-Alloy Z (超合金Z, Chōgokin Zetto), which is forged from a new element (Japanium) mined from a reservoir found only in the sediment of Mt. Fuji, in Japan.",
+            "year" : "1972",
+            "age" : "14",
+            "duration" : "92 Episodes",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "019",
+            "name" : "Akira",
+            "des" : "Set in a dystopian 2019, it tells the story of Shōtarō Kaneda, a leader of a biker gang whose childhood friend, Tetsuo Shima, acquires incredible telekinetic abilities after a motorcycle accident, eventually threatening an entire military ...",
+            "year" : "1988",
+            "age" : "16",
+            "duration" : "3h 4m",
+            "resolution" : "HD"
+        },
+        {
+            "id" : "020",
+            "name" : "Spirited Away",
+            "des" : "Spirited Away tells the story of Chihiro Ogino (Hiiragi), a ten-year-old girl who, while moving to a new neighborhood, enters the world of Kami (spirits of Japanese Shinto folklore).",
+            "year" : "2001",
+            "age" : "14",
+            "duration" : "2h 5m",
+            "resolution" : "2K"
+        }
+    ]
+}
